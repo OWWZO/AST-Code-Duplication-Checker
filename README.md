@@ -4,55 +4,17 @@
 
 项目运行效果:
 输入代码：
-#include "ast.h"
-int main(){
-       for(int i=0;i<10;i++){
-        int a=10;
-     }
-     return 0;
-}
+![代码截图](images/code.png)
 ![项目截图](images/image.png)
 
 
-
-
-
-
-#include "ast.h"
-int main(){
-       for(int i=0;i<10;i++){
-        printf("%d",666);
-     }
-     return 0;
-}
+输入代码：
+![代码截图](images/code1.png)
 ![项目截图](images/image1.png)
 
 
-
-
-
-
-#include<stdio.h>
-int main()
-{
-    int i = 0, j = 0;
-    int num;
-    i = 2;
-    while (scanf("%d", &num))
-    {
-        if (num > 0){
-            i++;
-        }
-        else if (num < 0){
-            j++;
-        }
-        else{
-            break;
-        }
-    }
-    printf("i=%d\nj=%d", i, j);
-    return 0;
-}
+输入代码：
+![代码截图](images/code2.png)
 ![项目截图](images/image2.png)
 
 
