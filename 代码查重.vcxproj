@@ -99,23 +99,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtRcc Include="QtWidgetsApplication.qrc" />
-    <QtUic Include="QtWidgetsApplication.ui" />
-    <QtMoc Include="QtWidgetsApplication.h" />
-    <ClCompile Include="QtWidgetsApplication.cpp" />
-    <QtMoc Include="MainWindow.h" />
-    <ClCompile Include="MainWindow.cpp" />
-    <ClCompile Include="ASTNode.cpp" />
-    <ClCompile Include="CodeProcessor.cpp" />
-    <ClCompile Include="ASTVisualizer.cpp" />
-    <ClCompile Include="Utils.cpp" />
-    <ClCompile Include="main_new.cpp" />
+    <ClInclude Include="src\ASTNode.h" />
+    <ClInclude Include="src\ASTVisualizer.h" />
+    <ClInclude Include="src\CodeProcessor.h" />
+    <ClInclude Include="src\Utils.h" />
+    <QtMoc Include="src\QtWidgetsApplication.h" />
+    <QtMoc Include="src\MainWindow.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ASTNode.h" />
-    <ClInclude Include="ASTVisualizer.h" />
-    <ClInclude Include="CodeProcessor.h" />
-    <ClInclude Include="Utils.h" />
+    <ClCompile Include="src\ASTNode.cpp" />
+    <ClCompile Include="src\ASTVisualizer.cpp" />
+    <ClCompile Include="src\CodeProcessor.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MainWindow.cpp" />
+    <ClCompile Include="src\QtWidgetsApplication.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="src\QtWidgetsApplication.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\QtWidgetsApplication.ui" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
